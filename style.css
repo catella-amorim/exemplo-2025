@@ -1,21 +1,40 @@
-/* Basic CSS for structure */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f9;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #007BFF;
-    padding: 20px;
+    background-color: #333;
     color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
@@ -25,54 +44,36 @@ nav ul li a {
 }
 
 section {
-    padding: 20px;
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 80%;
 }
 
 section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: #333;
 }
 
-.intro {
-    text-align: center;
-}
-
-.cta .btn {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+section p {
+    font-size: 1.1rem;
+    color: #555;
 }
 
 footer {
-    background-color: #007BFF;
+    background-color: #333;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 1rem 0;
 }
 
-footer form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-footer form input, footer form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-}
-
-footer form button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer form button:hover {
-    background-color: #218838;
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 }
