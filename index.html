@@ -1,67 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conexão entre o campo e a cidade - sustentabilidade, cultura, desafios e oportunidades.">
-    <title>Conexão Campo e Cidade</title>
+    <meta name="description" content="Site sobre a relação entre o campo e a cidade.">
+    <title>Relação entre Campo e Cidade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Cabeçalho -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#campo-cidade">O Campo e a Cidade</a></li>
-                <li><a href="#desafios">Desafios e Oportunidades</a></li>
-                <li><a href="#cultura">Cultura e Identidade</a></li>
-                <li><a href="#sustentabilidade">Sustentabilidade e Inovação</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Conexão entre o Campo e a Cidade</h1>
+            <nav>
+                <ul>
+                    <li><a href="#historia">História</a></li>
+                    <li><a href="#economia">Economia</a></li>
+                    <li><a href="#urbanizacao">Urbanização</a></li>
+                    <li><a href="#tecnologia">Tecnologia e Sustentabilidade</a></li>
+                    <li><a href="#cultura">Cultura</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="home">
-        <div class="intro">
-            <h1>Conexão Entre o Campo e a Cidade</h1>
-            <p>Explorando a interdependência entre a vida urbana e rural e como elas se influenciam no desenvolvimento sustentável.</p>
-        </div>
-        <div class="cta">
-            <a href="#campo-cidade" class="btn">Descubra mais</a>
+    <!-- Seção de Introdução -->
+    <section id="intro">
+        <div class="container">
+            <h2>Introdução</h2>
+            <p>A relação entre o campo e a cidade é fundamental para a formação da sociedade moderna. Este site explora como as duas realidades se conectam e influenciam mutuamente, desde a história até os desafios futuros.</p>
         </div>
     </section>
 
-    <section id="campo-cidade">
-        <h2>O Campo e a Cidade</h2>
-        <p>O campo e a cidade, historicamente, foram dois mundos muito distintos. Mas com o tempo, suas relações se tornaram cada vez mais estreitas...</p>
-        <img src="campo-cidade.jpg" alt="Campo e Cidade">
+    <!-- Seção História -->
+    <section id="historia">
+        <div class="container">
+            <h2>História da Conexão Campo-Cidade</h2>
+            <p>Desde os primórdios das civilizações, o campo e a cidade têm se interconectado, seja por meio de trocas comerciais ou pela migração de populações...</p>
+        </div>
     </section>
 
-    <section id="desafios">
-        <h2>Desafios e Oportunidades</h2>
-        <p>Embora a convivência entre o campo e a cidade traga benefícios mútuos, também existem muitos desafios a serem superados...</p>
+    <!-- Seção Economia -->
+    <section id="economia">
+        <div class="container">
+            <h2>A Economia Rural e Urbana</h2>
+            <p>A economia das cidades depende fortemente da produção rural. Produtos como alimentos, matérias-primas e outros bens são essenciais para o funcionamento das áreas urbanas...</p>
+        </div>
     </section>
 
+    <!-- Seção Urbanização -->
+    <section id="urbanizacao">
+        <div class="container">
+            <h2>Urbanização e seus Desafios</h2>
+            <p>A urbanização tem gerado tanto benefícios quanto desafios, como a escassez de recursos no campo e o crescimento desordenado das cidades...</p>
+        </div>
+    </section>
+
+    <!-- Seção Tecnologia e Sustentabilidade -->
+    <section id="tecnologia">
+        <div class="container">
+            <h2>Tecnologia e Sustentabilidade</h2>
+            <p>O uso de novas tecnologias no campo, como drones e inteligência artificial, está revolucionando a produção agrícola, enquanto as cidades se tornam mais sustentáveis...</p>
+        </div>
+    </section>
+
+    <!-- Seção Cultura -->
     <section id="cultura">
-        <h2>Cultura e Identidade</h2>
-        <p>A troca cultural entre a cidade e o campo se reflete em várias expressões artísticas, como música, culinária e festas populares...</p>
+        <div class="container">
+            <h2>Cultura e Tradições</h2>
+            <p>A cultura do campo, com suas festas populares e gastronomia, influencia diretamente a vida nas cidades, trazendo um pedacinho do rural para o urbano...</p>
+        </div>
     </section>
 
-    <section id="sustentabilidade">
-        <h2>Sustentabilidade e Inovação</h2>
-        <p>A sustentabilidade é um ponto central no diálogo entre o campo e a cidade. Tecnologias agrícolas podem ser aplicadas à vida urbana, e soluções urbanas podem beneficiar as zonas rurais...</p>
-    </section>
-
-    <footer id="contato">
-        <h3>Contato</h3>
-        <form action="/submit" method="POST">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <textarea name="message" id="message" rows="4" placeholder="Deixe uma mensagem..."></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Conexão Campo e Cidade. Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
